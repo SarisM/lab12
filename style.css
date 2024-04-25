@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 40px;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around; /* Para centrar las tarjetas horizontalmente */
+}
+
+.card {
+	flex: 1 0 calc(20% - 20px); /* Para calcular el ancho de la tarjeta con un margen */
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 25px;
+	background-color: #eee;
+	border-radius: 8px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card > div {
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+}
+
+.card > p {
+	font-size: 0.9rem;
+	color: #333;
+}
+
+.card > img {
+	width: 50%;
+}
+
